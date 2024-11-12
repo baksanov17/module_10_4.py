@@ -12,7 +12,7 @@ class Table:
 
 class Guest(Thread):
     def __init__(self, name):
-        super().__init__()
+        Thread.__init__(self)
         self.name = name
 
     def run(self):
